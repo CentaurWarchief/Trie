@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Trie &mdash; A visual demonstration</title>
+
+      <style>
+        body div {
+          width: 1000px;
+          margin: 0px auto;
+          text-align: center;
+          font-family: 'Lato';
+          font-size: 23px;
+        }
+
+        svg text {
+          font-family: 'Lato';
+          font-size: 16px;
+          font-weight: bold;
+          fill: white;
+        }
+      </style>
+      <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+      <script type="text/javascript" src="https://fb.me/react-with-addons-0.13.3.js"></script>
+      <script type="text/javascript" src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+  </head>
+  <body>
+    <div></div>
+
+    <script type="text/javascript" src="sprintf.js"></script>
+    <script type="text/javascript" src="computeD3Tree.js"></script>
+    <script type="text/javascript" src="computeTrie.js"></script>
+    <script type="text/jsx" src="TrieVisualGraph.jsx"></script>
+    <script type="text/jsx" src="OneSecondOneState.jsx"></script>
+
+    <script type="text/jsx">
+      React.render(
+        <OneSecondOneState />,
+        document.querySelector('div')
+      );
+    </script>
+  </body>
+</html>
